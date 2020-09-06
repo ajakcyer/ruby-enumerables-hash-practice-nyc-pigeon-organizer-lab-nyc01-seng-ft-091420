@@ -27,6 +27,10 @@ def nyc_pigeon_organizer(data)
         if new_hash[names] == nil
           new_hash[names] = {}
           new_hash[names][cgl] = []
+        else
+          new_hash[names][cgl] = []
+          binding.pry
+        end
       end
     end
   end
