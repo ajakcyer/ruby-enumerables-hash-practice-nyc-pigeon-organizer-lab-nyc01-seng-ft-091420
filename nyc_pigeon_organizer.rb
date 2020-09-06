@@ -8,7 +8,7 @@ def nyc_pigeon_organizer(data)
           new_hash[name] = {}
           binding.pry
           new_hash[name][color_gender_lives] = []
-          
+        end
       end
     end
   end
