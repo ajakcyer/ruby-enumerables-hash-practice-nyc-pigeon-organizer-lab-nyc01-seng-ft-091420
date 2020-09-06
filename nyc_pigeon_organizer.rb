@@ -20,19 +20,17 @@ data = {
 
 def nyc_pigeon_organizer(data)
   new_hash = {}
-  data.each do |color_gender_lives, values|
-    color_gender_lives.each do |value, array|
-      array.each do |name|
-        if new_hash[name] == nil
-          binding.pry
-          new_hash[name] = {}
-          new_hash[name][color_gender_lives] = []
-        else
-          new_hash[name][color_gender_lives] = []
-        end
+  
+  data.each do |cgl, values|
+    values.each do |value, array|
+      array.each do |names|
+        if new_hash[names] == nil
+          new_hash[names] = {}
+          new_hash[names][cgl] = []
       end
     end
   end
+  
 end
 
 nyc_pigeon_organizer(data)
