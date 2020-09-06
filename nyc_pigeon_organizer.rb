@@ -28,7 +28,8 @@ def nyc_pigeon_organizer(data)
           new_hash[names] = {}
           new_hash[names][cgl] = []
         end
-        if new_hash[names][cgl] = []
+        if new_hash[names][cgl] == nil
+          
           
         end
         new_hash[names][cgl].push(values.to_s)
