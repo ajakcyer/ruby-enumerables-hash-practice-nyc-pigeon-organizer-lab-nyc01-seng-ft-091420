@@ -24,12 +24,12 @@ def nyc_pigeon_organizer(data)
     color_gender_lives.each do |value, array|
       array.each do |name|
         if new_hash[name] == nil
+          binding.pry
           new_hash[name] = {}
           new_hash[name][color_gender_lives] = []
         else
           new_hash[name][color_gender_lives] = []
         end
-        binding.pry
       end
     end
   end
