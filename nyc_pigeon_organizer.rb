@@ -33,7 +33,7 @@ def nyc_pigeon_organizer(data)
         end
         
         if values.include?(names)
-          new_hash[names][cgl].push()
+          new_hash[names][cgl].push(value)
         end
       end
     end
