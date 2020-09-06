@@ -31,7 +31,11 @@ def nyc_pigeon_organizer(data)
           new_hash[names][cgl] = []
           # binding.pry
         end
+        
       end
+      
+      if 
+      
     end
   end
   
